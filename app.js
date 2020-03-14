@@ -34,7 +34,7 @@ const main_loop = () => {
     }, 10);
 }
 
-const mqtt_client = mqtt.connect('wss://mqtt-broker-mikko.herokuapp.com');
+const mqtt_client = mqtt.connect('wss://osama-robot.herokuapp.com');
 mqtt_client.on('connect', () => {
     console.log('connected to mqtt broker');
     main_loop();
